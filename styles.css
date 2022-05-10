@@ -1,0 +1,28 @@
+/* Page Layout:*/
+
+#pageContainer {
+min-height: 100vh;
+display: flex;
+}
+
+.pageLeft {
+    width: 50vw;
+    background-color: #ee1515;
+    position: relative;
+}
+
+.pageRight {
+    width: 50vw;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/*Page right - Positioning*/
+
+#pokeSprite {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 120px;
+    left: 215px;
+}
