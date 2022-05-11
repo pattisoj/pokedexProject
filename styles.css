@@ -1,4 +1,13 @@
-/* Page Layout:*/
+/* || CSS Variables: */
+
+:root {
+    --pokeRed: #ee1515;
+    --pokeWhite: #f0f0f0;
+    --pokeBlack: #222224;
+    --statsBoxRadius: 8px;
+}
+
+/* || Page Layout:*/
 
 .pageContainer {
 min-height: 100vh;
@@ -7,22 +16,87 @@ display: flex;
 
 .pageLeft {
     width: 50vw;
-    background-color: #ee1515;
+    background-color: var(--pokeRed);
     position: relative;
 }
 
 .pageRight {
     width: 50vw;
-    background-color: #f0f0f0;
+    background-color: var(--pokeWhite);
     position: relative;
 }
 
-/*Page right - Positioning*/
+/* || Page right - Positioning {Still need to put font size into %} */
+
+.pokeName {
+    width: 25vw;
+    height: 4vw;
+    position: absolute;
+    text-align: center;
+    top: 6%;
+    right: 3%;
+    border-radius: var(--statsBoxRadius);
+    background: blue;
+}
 
 .pokeSprite {
-    width: 250px;
-    height: 250px;
+    width: 38%;
+    height: 38%;
     position: absolute;
-    top: 120px;
-    left: 215px;
+    top: 18%;
+    left: 30%;
+}
+
+.pokeTypeOne {
+    width: 12%;
+    height: 3%;
+    position: absolute;
+    text-align: center;
+    top: 16.5%;
+    right: 16.5%;
+    border-radius: 4px;
+    background: blue;
+}
+
+.pokeTypeTwo {
+    width: 12%;
+    height: 3%;
+    position: absolute;
+    text-align: center;
+    top: 16.5%;
+    right: 3%;
+    border-radius: 4px;
+    background: blue;
+}
+
+.pokeHeight{
+    width: 25.5%;
+    height: 4%;
+    position: absolute;
+    text-align: left;
+    top: 21%;
+    right: 3%;
+    border-radius: var(--statsBoxRadius);
+    background: blue;
+}
+
+.pokeWeight{
+    width: 25.5%;
+    height: 4%;
+    position: absolute;
+    text-align: left;
+    top: 26%;
+    right: 3%;
+    border-radius: var(--statsBoxRadius);
+    background: blue;
+}
+
+.pokeDescription {
+    width: 45vw;
+    height: 28vh;
+    position: absolute;
+    top: 57%;
+    right: 3%;
+    border-radius: var(--statsBoxRadius);
+    background-color: blue;
 }
