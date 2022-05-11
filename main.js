@@ -18,10 +18,10 @@ async function pokemonAPI() {
   userNameSplit[0] = userNameSplit[0].toUpperCase();
   let userName = userNameSplit.join("");
   //Takes the name data and displays it on screen
-  let h1 = document.getElementById("pokeName");
+  let h1 = document.querySelector(".pokeName");
   h1.innerText = userName;
   //Gets the front sprite and displays it on screen
-  let imgTest = document.getElementById("pokeSprite");
+  let imgTest = document.querySelector(".pokeSprite");
   let imgStore = data.sprites.front_default;
   imgTest.src = imgStore;
 }

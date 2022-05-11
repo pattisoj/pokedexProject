@@ -1,6 +1,6 @@
 /* Page Layout:*/
 
-#pageContainer {
+.pageContainer {
 min-height: 100vh;
 display: flex;
 }
@@ -19,7 +19,7 @@ display: flex;
 
 /*Page right - Positioning*/
 
-#pokeSprite {
+.pokeSprite {
     width: 250px;
     height: 250px;
     position: absolute;
