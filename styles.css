@@ -67,15 +67,15 @@
     border-radius: 4px;
     background: blue;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .pokeTypeOne {
     padding-left: 1%;
+    padding-right: 1%;
     font-size: .7vw;
     font-family: var(--pokeFont);
-    
 }
 
 .pokeTypeTwoBox {
@@ -87,12 +87,13 @@
     border-radius: 4px;
     background: blue;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .pokeTypeTwo {
     padding-left: 1%;
+    padding-right: 1%;
     font-size: .7vw;
     font-family: var(--pokeFont);
 }

@@ -23,19 +23,41 @@ async function pokemonAPI() {
   let h2 = document.querySelector(".pokeName");
   h2.innerText = userName;
 
+  //Gets the Type 1 data and displays it on screen
+  let foundTypeOne = JSON.stringify(data.types[0].type.name);
+  let stringTypeOne = foundTypeOne.replaceAll('"', "");
+  let typeOne = stringTypeOne.toUpperCase();
+  console.log(typeOne);
+  let typeOneChanger = document.querySelector(".pokeTypeOne");
+  typeOneChanger.append(`${typeOne}`);
+
+  //Gets the Type 2 data (if available) and displays it on screen
+  //Else it displays nothing
+  if (data.types.length > 1) {
+    let foundTypeTwo = JSON.stringify(data.types[1].type.name);
+    let stringTypeTwo = foundTypeTwo.replaceAll('"', "");
+    let typeTwo = stringTypeTwo.toUpperCase();
+    console.log(typeTwo);
+    let typeTwoChanger = document.querySelector(".pokeTypeTwo");
+    typeTwoChanger.append(`${typeTwo}`);
+  } else {
+    let typeTwoChanger = document.querySelector(".pokeTypeTwo");
+    typeTwoChanger.append(``);
+  }
+
   //Gets the front sprite and displays it on screen
   let imgTest = document.querySelector(".pokeSprite");
   let imgStore = data.sprites.front_default;
   imgTest.src = imgStore;
 
-  // Append height to height p
+  // Gets the height data and displays it on screen
   let foundHeight = JSON.stringify(data.height);
   let foundHeightString = foundHeight.replaceAll('"', "");
   let pokemonHeight = Number(foundHeightString);
   let heightChanger = document.querySelector(".pokeHeight");
   heightChanger.append(`Height - ${pokemonHeight / 10}m`);
 
-  // Append weight to weight p
+  // Gets the weight data and displays it on screen
   let foundWeight = JSON.stringify(data.weight);
   let foundWeightString = foundWeight.replaceAll('"', "");
   let pokemonWeight = Number(foundWeightString);
