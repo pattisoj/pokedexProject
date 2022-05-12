@@ -5,42 +5,54 @@
     --pokeWhite: #f0f0f0;
     --pokeBlack: #222224;
     --statsBoxRadius: 8px;
+    --pokeFont: 'Press Start 2P', cursive;
 }
 
 /* || Page Layout:*/
 
 .pageContainer {
-min-height: 100vh;
-display: flex;
+    min-height: 100vh;
+    max-width: 100vh;
+    display: flex;
 }
 
 .pageLeft {
-    width: 50vw;
+    min-width: 50vw;
+    max-width: 50vw;
     background-color: var(--pokeRed);
     position: relative;
 }
 
 .pageRight {
-    width: 50vw;
+    min-width: 50vw;
+    max-width: 50vw;
     background-color: var(--pokeWhite);
     position: relative;
 }
 
-/* || Page right - Positioning {Still need to put font size into %} */
+/* || Page right - Positioning */
 
 .pokeNameBox {
     width: 25vw;
     height: 4vw;
-    position: absolute;
+    position: relative;
     top: 6%;
-    right: 3%;
+    left: 47%;
     border-radius: var(--statsBoxRadius);
     background: blue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pokeName {
+    font-size: 2vw;
+    font-family: var(--pokeFont);
 }
 
 .pokeSprite {
     width: 38%;
-    height: 38%;
+    height: auto;
     position: absolute;
     top: 18%;
     left: 30%;
@@ -54,6 +66,16 @@ display: flex;
     right: 16.5%;
     border-radius: 4px;
     background: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokeTypeOne {
+    padding-left: 1%;
+    font-size: .7vw;
+    font-family: var(--pokeFont);
+    
 }
 
 .pokeTypeTwoBox {
@@ -64,6 +86,15 @@ display: flex;
     right: 3%;
     border-radius: 4px;
     background: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokeTypeTwo {
+    padding-left: 1%;
+    font-size: .7vw;
+    font-family: var(--pokeFont);
 }
 
 .pokeHeightBox{
@@ -74,6 +105,15 @@ display: flex;
     right: 3%;
     border-radius: var(--statsBoxRadius);
     background: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokeHeight {
+    padding-left: 3%;
+    font-size: .8vw;
+    font-family: var(--pokeFont);
 }
 
 .pokeWeightBox{
@@ -84,6 +124,15 @@ display: flex;
     right: 3%;
     border-radius: var(--statsBoxRadius);
     background: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokeWeight {
+    padding-left: 3%;
+    font-size: .8vw;
+    font-family: var(--pokeFont);
 }
 
 .pokeDescriptionBox {
@@ -94,4 +143,15 @@ display: flex;
     right: 3%;
     border-radius: var(--statsBoxRadius);
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pokeDescription {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: .8vw;
+    font-family: var(--pokeFont);
 }
