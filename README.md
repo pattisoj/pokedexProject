@@ -23,7 +23,7 @@ _This was the plan created on 11/05/22_
 
 ![Pokédex project initial plan](projectGraphics/pattisojPokedexPlan.png)
 
----
+
 
 ## Usage.
 
