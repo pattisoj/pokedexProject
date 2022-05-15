@@ -17,7 +17,7 @@ The Pattisoj Pokédex is a personal project to help me develop my HTML, CSS and 
 
 ## The Project Plan.
 
-This project has been created to stretch my (current) abilities and allow me to learn more alongside my coding boot camp. I intend to be creative and also delve into the automated testing of my code.
+This project has been created to stretch my (current) abilities and allow me to learn more alongside my coding boot camp.
 
 _This was the plan created on 11/05/22_
 
